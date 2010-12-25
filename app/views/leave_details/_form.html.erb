@@ -1,0 +1,41 @@
+<%= form_for(@leave_detail) do |f| %>
+  <% if @leave_detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@leave_detail.errors.count, "error") %> prohibited this leave_detail from being saved:</h2>
+
+      <ul>
+      <% @leave_detail.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fromdate %><br />
+    <%= f.text_field :fromdate %>
+  </div>
+  <div class="field">
+    <%= f.label :todate %><br />
+    <%= f.text_field :todate %>
+  </div>
+  <div class="field">
+    <%= f.label :leavetype %><br />
+    <%= f.text_field :leavetype %>
+  </div>
+  <div class="field">
+    <%= f.label :contactinfo %><br />
+    <%= f.text_field :contactinfo %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :empno %><br />
+    <%= f.text_field :empno %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

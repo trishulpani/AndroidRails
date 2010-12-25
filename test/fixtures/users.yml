@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  empno: MyString
+  name: MyString
+  l_vacation: 1
+  l_sick: 1
+  l_comp: 1
+  l_personal: 1
+  role: MyString
+
+two:
+  empno: MyString
+  name: MyString
+  l_vacation: 1
+  l_sick: 1
+  l_comp: 1
+  l_personal: 1
+  role: MyString

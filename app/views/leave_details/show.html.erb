@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fromdate:</b>
+  <%= @leave_detail.fromdate %>
+</p>
+
+<p>
+  <b>Todate:</b>
+  <%= @leave_detail.todate %>
+</p>
+
+<p>
+  <b>Leavetype:</b>
+  <%= @leave_detail.leavetype %>
+</p>
+
+<p>
+  <b>Contactinfo:</b>
+  <%= @leave_detail.contactinfo %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @leave_detail.status %>
+</p>
+
+<p>
+  <b>Empno:</b>
+  <%= @leave_detail.empno %>
+</p>
+
+
+<%= link_to 'Edit', edit_leave_detail_path(@leave_detail) %> |
+<%= link_to 'Back', leave_details_path %>

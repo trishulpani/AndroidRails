@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Empno:</b>
+  <%= @user.empno %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>L vacation:</b>
+  <%= @user.l_vacation %>
+</p>
+
+<p>
+  <b>L sick:</b>
+  <%= @user.l_sick %>
+</p>
+
+<p>
+  <b>L comp:</b>
+  <%= @user.l_comp %>
+</p>
+
+<p>
+  <b>L personal:</b>
+  <%= @user.l_personal %>
+</p>
+
+<p>
+  <b>Role:</b>
+  <%= @user.role %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

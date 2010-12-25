@@ -1,0 +1,33 @@
+<h1>Listing leave_details</h1>
+
+<table>
+  <tr>
+    <th>Fromdate</th>
+    <th>Todate</th>
+    <th>Leavetype</th>
+    <th>Contactinfo</th>
+    <th>Status</th>
+    <th>Empno</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @leave_details.each do |leave_detail| %>
+  <tr>
+    <td><%= leave_detail.fromdate %></td>
+    <td><%= leave_detail.todate %></td>
+    <td><%= leave_detail.leavetype %></td>
+    <td><%= leave_detail.contactinfo %></td>
+    <td><%= leave_detail.status %></td>
+    <td><%= leave_detail.empno %></td>
+    <td><%= link_to 'Show', leave_detail %></td>
+    <td><%= link_to 'Edit', edit_leave_detail_path(leave_detail) %></td>
+    <td><%= link_to 'Destroy', leave_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Leave detail', new_leave_detail_path %>

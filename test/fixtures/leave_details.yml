@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fromdate: MyString
+  todate: MyString
+  leavetype: MyString
+  contactinfo: MyString
+  status: MyString
+  empno: MyString
+
+two:
+  fromdate: MyString
+  todate: MyString
+  leavetype: MyString
+  contactinfo: MyString
+  status: MyString
+  empno: MyString
